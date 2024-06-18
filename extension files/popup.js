@@ -11,10 +11,11 @@ chrome.runtime.onMessage.addListener(function(allergicIngredients) {
   
   // Fetch allergic ingredients from background script
   chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-    chrome.tabs.sendMessage(tabs[0].id, { action: "getIngredients" });
+    chrome.tabs.sendMessage({type: 'get_data'}, function(response) {
+      console.log('popup recieved background response', response)
+    });
     console.log('popup requesting background')
   });
-  
-  
+
   
   
