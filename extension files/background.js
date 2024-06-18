@@ -1,6 +1,6 @@
 // Listen for messages from content scripts
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-    if (message.ingredients) {
+
       let ingredients = message.ingredients;
       // Replace with your logic to check against allergens
       let allergens = ['Amerchol L101','Peg-16 lanolin','Lanolin peg-16','Peg-16 lanolin alcohol','Lanolin polyethylene glycol ether (16 moles)','Lanolin derivative'
@@ -33,5 +33,5 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
       sendResponse(allergicIngredients);
       console.log('background sending to content')
     }
-  });
+  );
   //
