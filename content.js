@@ -2,7 +2,7 @@
 function scrapeIngredients() {
     let ingredients = [];
     // Replace this selector with the actual selector for ingredients on the page
-    let ingredientElements = document.querySelectorAll('.ingredient-list li');
+    let ingredientElements = document.querySelectorAll('.css-26us6o');
     ingredientElements.forEach(element => {
       ingredients.push(element.textContent.trim());
     });
