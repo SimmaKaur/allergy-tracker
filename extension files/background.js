@@ -31,6 +31,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
       let allergicIngredients = ingredients.filter(ingredient => allergens.includes(ingredient.toLowerCase()));
       // Send response back to content script
       sendResponse(allergicIngredients);
+      console.log('background sending to content')
     }
   });
   //
