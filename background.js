@@ -27,7 +27,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 ,'Lignocaine hydrochloride','Linalool','β-linalool','p-linalool'
 ,'Linalyl alcohol','3,7-Dimethyl-1,6-octadien-3-ol'
 ,'2,6-Dimethyl-2,7-octadien-6-ol','Propolis','Bee glue','Bee propolis'
-,'Bee cement','Propolis extract','Apis propolis']; // Example list of allergens
+,'Bee cement','Propolis extract','Apis propolis','Beeswax']; // Example list of allergens
       let allergicIngredients = ingredients.filter(ingredient => allergens.includes(ingredient.toLowerCase()));
       // Send response back to content script
       sendResponse(allergicIngredients);
