@@ -4,6 +4,7 @@
     "version": "1.0",
     "background": { "service_worker": "background.js", "type":"module"},
     "permissions": ["activeTab", "storage"],
+    "host_permissions": ["*://*/"],
     "action": {
       "default_popup": "popup.html"
     },
