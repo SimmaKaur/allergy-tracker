@@ -41,6 +41,6 @@ def checker(input):
             found_allergens.append(i)
     return found_allergens
 
-ingredients = 'Benzoyl Peroxide, buh'
+# ingredients = 'Benzoyl Peroxide, buh'
 
-print(checker(ingredients))
+# print(checker(ingredients))
