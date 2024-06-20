@@ -35,7 +35,6 @@ allergens = new_allergens_list
 def checker(input):
     input = input.lower()
     input = input.partition(", ")
-    print('DEBUG: input list after partitioning is: ', input)
     found_allergens = []
     for i in input:
         if i in allergens:
