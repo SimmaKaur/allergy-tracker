@@ -34,13 +34,13 @@ allergens = new_allergens_list
 
 def checker(input):
     input = input.lower()
-    input = input.partition(", ")
+    input = input.split(", ")
     found_allergens = []
     for i in input:
         if i in allergens:
             found_allergens.append(i)
     return found_allergens
 
-# ingredients = 'Benzoyl Peroxide, buh'
+ingredients = 'Benzoyl Peroxide, buh'   # paste ingredients here
 
-# print(checker(ingredients))
+print(checker(ingredients))
